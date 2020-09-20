@@ -35,7 +35,6 @@ const Home: React.FC<HomeProps> = ({ episodeService }) => {
 
 	const showSeasons = () => {
 		const episodes = toJS(episodeService.seasonList);
-		console.log(episodes);
 		return episodes.map((episode, index) => {
 			return <EpisodeItem key={index} episode={episode} seasonNum={episodeService.seasonNumber} />;
 		});

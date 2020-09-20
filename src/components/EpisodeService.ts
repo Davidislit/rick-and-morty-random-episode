@@ -91,7 +91,6 @@ class EpisodeService {
     @action
     async openModal() {
         this.modalPicker = true;
-        console.log(this.modalPicker);
     }
 
     @action
